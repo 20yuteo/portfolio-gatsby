@@ -1,12 +1,12 @@
 import React from "react";
 import SC from "./style";
 import { Card } from "../Card";
-import { Section } from "../Section";
+import { Section, SectionBody } from "../Section";
 
 export const AboutMe = () => {
     return(
         <Section>
-            <SC.Body>
+            <SectionBody>
                 <SC.Title>
                     About Me
                 </SC.Title>
@@ -47,7 +47,7 @@ export const AboutMe = () => {
                         </SC.ItemList>
                     </Card>
                 </SC.Content>
-            </SC.Body>
+            </SectionBody>
         </Section>
     )
 }

@@ -6,6 +6,7 @@ import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import { Header } from "../components/Header"
 import { AboutMe } from "../components/AboutMe"
+import { Blog } from "../components/Blog"
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -18,6 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <SEO />
       <Header />
       <AboutMe />
+      <Blog />
     </>
   )
 }
