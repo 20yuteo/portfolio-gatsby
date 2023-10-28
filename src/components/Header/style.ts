@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Header = styled.header`
-    padding: 48px 52px;
+    padding: 48px 0;
     width: 100%;
 `;
 
@@ -11,6 +11,7 @@ const Nav = styled.nav`
     height: 48px;
     justify-content: right;
     align-items: center;
+    padding-right: 32px;
 `;
 
 const NavList = styled.ul`
