@@ -38,6 +38,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
 `;
 
 const ContentItem = styled.div`
@@ -71,6 +72,10 @@ const ListItem = styled.li`
     display: flex;
     align-items: center;
     padding: 8px 0;
+    width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 `;
 
 export default {

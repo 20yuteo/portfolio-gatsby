@@ -15,14 +15,14 @@ export const AboutMe = () => {
                 <SC.Content>
                     <Card>
                         <SC.ItemTitle>
-                            Name
+                            Jobs
                         </SC.ItemTitle>
                         <SC.ItemList>
                             <SC.ListItem>
                                 Eto Ushi
                             </SC.ListItem>
                             <SC.ListItem>
-                                AAAAAA
+                                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                             </SC.ListItem>
                             <SC.ListItem>
                                 BBBB
@@ -31,23 +31,7 @@ export const AboutMe = () => {
                     </Card>
                     <Card>
                         <SC.ItemTitle>
-                            Name
-                        </SC.ItemTitle>
-                        <SC.ItemList>
-                            <SC.ListItem>
-                                Eto Ushi
-                            </SC.ListItem>
-                            <SC.ListItem>
-                                AAAAAA
-                            </SC.ListItem>
-                            <SC.ListItem>
-                                BBBB
-                            </SC.ListItem>
-                        </SC.ItemList>
-                    </Card>
-                    <Card>
-                        <SC.ItemTitle>
-                            Name
+                            Skills
                         </SC.ItemTitle>
                         <SC.ItemList>
                             <SC.ListItem>

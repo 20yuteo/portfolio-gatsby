@@ -10,8 +10,8 @@ const Card = styled.div`
     background: ${acceptColor("Accent03")};
     box-shadow: 0px -12px 1px 0px rgba(0, 0, 0, 0.25) inset;
 
-    width: 327px;
-    height: 180px;
+    max-width: 327px;
+    min-height: 160px;
     padding: 12px;
     gap: 10px;
 `;
