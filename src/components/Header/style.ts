@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Header = styled.header`
     padding: 48px 52px;
+    width: 100%;
 `;
 
 const Nav = styled.nav`
