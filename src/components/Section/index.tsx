@@ -7,7 +7,7 @@ type SectionProps = {
     children: React.ReactNode
 }
 
-export const Section = ({backgroundColor = "Surface", children}: SectionProps) => {
+const Section = ({backgroundColor = "Surface", children}: SectionProps) => {
     return (
         <SC.Section backgroundColor={acceptColor(backgroundColor)}>
             {children}
@@ -15,7 +15,7 @@ export const Section = ({backgroundColor = "Surface", children}: SectionProps) =
     )
 }
 
-export const SectionTitle = ({children}: {children: React.ReactNode}) => {
+const SectionTitle = ({children}: {children: React.ReactNode}) => {
     return (
         <SC.SectionTitle>
             {children}
@@ -23,10 +23,15 @@ export const SectionTitle = ({children}: {children: React.ReactNode}) => {
     )
 }
 
-export const SectionBody = ({children}: {children: React.ReactNode}) => {
+const SectionBody = ({children}: {children: React.ReactNode}) => {
     return (
         <SC.SectionBody>
             {children}
         </SC.SectionBody>
     )
 }
+
+Section.Title = SectionTitle;
+Section.Body = SectionBody;
+
+export { Section }

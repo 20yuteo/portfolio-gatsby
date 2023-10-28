@@ -1,12 +1,12 @@
 import React from "react"
-import { Section, SectionBody, SectionTitle } from "../Section"
+import { Section } from "../Section"
 
 export const Blog = () => {
     return (
         <Section backgroundColor={"Accent03"}>
-            <SectionBody>
-                <SectionTitle>Blog</SectionTitle>
-            </SectionBody>
+            <Section.Body>
+                <Section.Title>Blog</Section.Title>
+            </Section.Body>
         </Section>
     )
 }

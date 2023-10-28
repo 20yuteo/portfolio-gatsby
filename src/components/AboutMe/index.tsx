@@ -1,15 +1,15 @@
 import React from "react";
 import SC from "./style";
 import { Card } from "../Card";
-import { Section, SectionBody } from "../Section";
+import { Section } from "../Section";
 
 export const AboutMe = () => {
     return(
         <Section>
-            <SectionBody>
-                <SC.Title>
+            <Section.Body>
+                <Section.Title>
                     About Me
-                </SC.Title>
+                </Section.Title>
                 <SC.ImgContainer>
                     <SC.Img src={'/eto_ushi_head.png'} />
                 </SC.ImgContainer>
@@ -47,7 +47,7 @@ export const AboutMe = () => {
                         </SC.ItemList>
                     </Card>
                 </SC.Content>
-            </SectionBody>
+            </Section.Body>
         </Section>
     )
 }
