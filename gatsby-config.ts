@@ -9,11 +9,18 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-google-gtag", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", {
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-gtag", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",
-      "path": "./src/pages/"
+      "path": "./src/pages/",
+      "trackingIds": [
+        process.env.GATSBY_TRACKING_ID
+      ],
+      pluginConfig: {
+        // Puts tracking script in the head instead of the body
+        head: true,
+      },
     },
     __key: "pages"
   }]
