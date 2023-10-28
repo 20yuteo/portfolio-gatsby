@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { acceptColor } from '../../const/Color';
 
 const Section = styled.section`
     padding: 80px 0;
@@ -23,7 +24,7 @@ const ImgContainer = styled.div`
     flex-shrink: 0;
     border-radius: 64px;
     margin: 16px auto;
-    background-color: #DCFD00;
+    background-color: ${acceptColor("Primary")};
     border: 4px solid var(--text-subtitle, #000);
     overflow: hidden;
 `;
@@ -45,7 +46,7 @@ const ContentItem = styled.div`
 
     border-radius: 16px;
     border: 4px solid #000;
-    background: #A4E8FF;
+    background: ${acceptColor("Accent03")};
     box-shadow: 0px -12px 1px 0px rgba(0, 0, 0, 0.25) inset;
 
     width: 327px;

@@ -1,5 +1,6 @@
 import React from "react";
 import SC from "./style";
+import { Card } from "../Card";
 
 export const AboutMe = () => {
     return(
@@ -12,7 +13,7 @@ export const AboutMe = () => {
                     <SC.Img src={'/eto_ushi_head.png'} />
                 </SC.ImgContainer>
                 <SC.Content>
-                    <SC.ContentItem>
+                    <Card>
                         <SC.ItemTitle>
                             Name
                         </SC.ItemTitle>
@@ -27,8 +28,8 @@ export const AboutMe = () => {
                                 BBBB
                             </SC.ListItem>
                         </SC.ItemList>
-                    </SC.ContentItem>
-                    <SC.ContentItem>
+                    </Card>
+                    <Card>
                         <SC.ItemTitle>
                             Name
                         </SC.ItemTitle>
@@ -43,8 +44,8 @@ export const AboutMe = () => {
                                 BBBB
                             </SC.ListItem>
                         </SC.ItemList>
-                    </SC.ContentItem>
-                    <SC.ContentItem>
+                    </Card>
+                    <Card>
                         <SC.ItemTitle>
                             Name
                         </SC.ItemTitle>
@@ -59,7 +60,7 @@ export const AboutMe = () => {
                                 BBBB
                             </SC.ListItem>
                         </SC.ItemList>
-                    </SC.ContentItem>
+                    </Card>
                 </SC.Content>
             </SC.Body>
         </SC.Section>
