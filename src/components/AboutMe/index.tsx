@@ -1,10 +1,11 @@
 import React from "react";
 import SC from "./style";
 import { Card } from "../Card";
+import { Section } from "../Section";
 
 export const AboutMe = () => {
     return(
-        <SC.Section>
+        <Section>
             <SC.Body>
                 <SC.Title>
                     About Me
@@ -47,6 +48,6 @@ export const AboutMe = () => {
                     </Card>
                 </SC.Content>
             </SC.Body>
-        </SC.Section>
+        </Section>
     )
 }
