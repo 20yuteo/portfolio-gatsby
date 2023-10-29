@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
 const Header = styled.header`
-    padding: 48px 0;
-    width: 100%;
-
-    @media screen and (max-width: 767px) {
-        padding: 24px 0;
-    }
+    padding: 48px;
+    display: flex;
+    justify-content: right;
 `;
 
 const Nav = styled.nav`
@@ -15,7 +12,7 @@ const Nav = styled.nav`
     height: 48px;
     justify-content: right;
     align-items: center;
-    padding-right: 32px;
+    /* padding-right: 32px; */
 
     @media screen and (max-width: 767px) {
         display: none;
