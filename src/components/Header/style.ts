@@ -12,7 +12,6 @@ const Nav = styled.nav`
     height: 48px;
     justify-content: right;
     align-items: center;
-    /* padding-right: 32px; */
 
     @media screen and (max-width: 767px) {
         display: none;
