@@ -2,6 +2,9 @@ import React from "react";
 import SC from "./style";
 
 export const Header = () => {
+
+    const [isHumbergerOpen, setIsHumbergerOpen] = React.useState(false);
+
     return (
         <SC.Header>
             <SC.Nav>
@@ -28,6 +31,11 @@ export const Header = () => {
                 </SC.NavListItem>
                 </SC.NavList>
             </SC.Nav>
+            <SC.Humberger onClick={() => setIsHumbergerOpen(isOpen => !isOpen)}>
+                <SC.HumbergerLine isOpen={isHumbergerOpen} />
+                <SC.HumbergerLine isOpen={isHumbergerOpen} />
+                <SC.HumbergerLine isOpen={isHumbergerOpen} />
+            </SC.Humberger>
         </SC.Header>
     )
 }
