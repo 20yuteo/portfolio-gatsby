@@ -58,17 +58,33 @@ const Humberger = styled.div`
 `;
 
 const HumbergerLine = styled.div<{isOpen: boolean}>`
+    position: relative;
     width: 32px;
     height: 4px;
     background-color: #000;
     margin: 8px auto;
     border-radius: 2px;
+    visibility: visible;
+    transform: rotate(0deg);
     opacity: 1;
-    transition: transform 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+
+    transition: transform 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+    transition: visibility 0.5s ease-in-out;
+
+    &:first-child {
+        transform: ${props => props.isOpen && 'rotate(45deg)'};
+        ${props => props.isOpen && `top: 12px;`}
+        /* top: 8px; */
+    }
+    &:nth-child(2) {
+        transform: ${props => props.isOpen && 'rotate(135deg)'};
+    }
+
 
     &:last-child {
-        ${props => props.isOpen && `opacity: none;`};
+        ${props => props.isOpen && `visibility: hidden;`};
+        ${props => props.isOpen && `opacity: 0;`};
     }
 `;
 
