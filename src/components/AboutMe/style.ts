@@ -39,6 +39,12 @@ const Content = styled.div`
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+    margin: 0 40px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ContentItem = styled.div`
@@ -72,7 +78,8 @@ const ListItem = styled.li`
     display: flex;
     align-items: center;
     padding: 8px 0;
-    width: 240px;
+    max-width: 240px;
+    min-width: 100px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

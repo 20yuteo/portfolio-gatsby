@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const MainColor = styled.div`
     position: relative;
     border-radius: 16px;
-    border: 4px solid var(--text-subtitle, #000);
-    background: var(--surface-01, #FFF);
+    border: 4px solid #000;
+    background: #FFF;
 
     /* Inner Shadow/Soft */
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25) inset;
