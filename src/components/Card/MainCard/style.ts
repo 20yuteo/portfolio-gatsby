@@ -15,7 +15,7 @@ const MainColor = styled.div`
 const MainColorContent = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 12px 60px;
     font-weight: 700;
     text-align: center;
     font-size: 24px;

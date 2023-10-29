@@ -2,6 +2,7 @@ import React from "react"
 import { Section } from "../Section"
 import MainCard from "../Card/MainCard"
 import { Button } from '../Button';
+import SC from "./style";
 
 export const Blog = () => {
 
@@ -20,12 +21,14 @@ export const Blog = () => {
         <Section backgroundColor={"Accent03"}>
             <Section.Body>
                 <Section.Title>Blog</Section.Title>
+                <SC.BlogBody>
                     <MainCard>
                         <MainCard.Content>
                             ブラウザバックを禁止したくなったら
                             <Button label="Read More" color='Primary' onClick={() => onClick("ProhibitBrowserBack")} />
                         </MainCard.Content>
                     </MainCard>
+                </SC.BlogBody>
             </Section.Body>
         </Section>
     )
