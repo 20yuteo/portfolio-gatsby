@@ -2,17 +2,24 @@ import React from 'react';
 import SC from './style';
 import { Button } from '../../Button';
 
-const MainCard = ({content}: {content: string}) => {
+const MainCard = ({children}: {children: React.ReactNode}) => {
     return (
         <SC.MainColor>
             <SC.Vector src={'./Vector.svg'} />
-            <SC.MainColorContent>
-                {content}
-                <Button label="Read More" color='Primary' />
-            </SC.MainColorContent>
+            {children}
             <SC.Ellipse src={'./Ellipse.svg'} />
         </SC.MainColor>
     );
 }
+
+const Content = ({children}: {children: React.ReactNode}) => {
+    return (
+        <SC.MainColorContent>
+            {children}
+        </SC.MainColorContent>
+    );
+}
+
+MainCard.Content = Content;
 
 export default MainCard;
