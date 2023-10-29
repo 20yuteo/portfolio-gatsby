@@ -1,6 +1,5 @@
 import React from 'react';
 import SC from './style';
-import { Button } from '../../Button';
 
 const MainCard = ({children}: {children: React.ReactNode}) => {
     return (
