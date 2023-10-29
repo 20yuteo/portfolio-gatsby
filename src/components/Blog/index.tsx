@@ -7,7 +7,6 @@ import SC from "./style";
 export const Blog = () => {
 
     const onClick = React.useCallback((type: "ProhibitBrowserBack" | "WhatIsDNS") => {
-        console.log(type)
         switch (type) {
             case "ProhibitBrowserBack":
                 window.open("https://20yuteo.github.io/hugoapp/dont_browser_back/", "_blank")
