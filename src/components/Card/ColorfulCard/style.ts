@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { acceptColor } from '../../const/Color';
+import { acceptColor } from '../../../const/Color';
 
-const Card = styled.div`
+const ColorfulCard = styled.div`
     display: flex;
     flex-direction: column;
 
@@ -17,5 +17,5 @@ const Card = styled.div`
 `;
 
 export default {
-    Card
+    ColorfulCard
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import SC from "./style";
-import { Card } from "../Card";
+import { ColorfulCard } from "../Card/ColorfulCard";
 import { Section } from "../Section";
 
 export const AboutMe = () => {
@@ -14,7 +14,7 @@ export const AboutMe = () => {
                     <SC.Img src={'/eto_ushi_head.png'} />
                 </SC.ImgContainer>
                 <SC.Content>
-                    <Card>
+                    <ColorfulCard>
                         <SC.ItemTitle>
                             Jobs
                         </SC.ItemTitle>
@@ -29,8 +29,8 @@ export const AboutMe = () => {
                                 BBBB
                             </SC.ListItem>
                         </SC.ItemList>
-                    </Card>
-                    <Card>
+                    </ColorfulCard>
+                    <ColorfulCard>
                         <SC.ItemTitle>
                             Skills
                         </SC.ItemTitle>
@@ -45,7 +45,7 @@ export const AboutMe = () => {
                                 BBBB
                             </SC.ListItem>
                         </SC.ItemList>
-                    </Card>
+                    </ColorfulCard>
                 </SC.Content>
             </Section.Body>
         </Section>
