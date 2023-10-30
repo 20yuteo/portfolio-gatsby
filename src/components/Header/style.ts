@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { acceptColor } from '../../const/Color';
 
 const Header = styled.header`
     padding: 48px;
@@ -50,6 +51,10 @@ const Humberger = styled.div`
 
     @media screen and (max-width: 767px) {
         display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        z-index: 300;
     }
 `;
 
@@ -82,6 +87,61 @@ const HumbergerLine = styled.div<{isOpen: boolean}>`
     }
 `;
 
+const HumbergerMenu = styled.div<{isOpen: boolean}>`
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 240px;
+        height: 100%;
+        background-color: ${acceptColor("Primary")};
+        z-index: 200;
+        transform: ${props => props.isOpen ? 'translateX(0)' : 'translateX(240px)'};
+        transition: transform 0.4s;
+    }
+`;
+
+const HumbergerNav = styled.nav`
+    display: none;
+    font-size: 24px;
+    height: 48px;
+    justify-content: right;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+`;
+
+const HumbergerNavList = styled.ul`
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: right;
+    position: relative;
+    top: 152px;
+    list-style: none;
+    font-weight: 600;
+`;
+
+const HumbergerNavListItem = styled.li`
+    padding-right: 16px;
+`;
+
+const HumbergerNavListLink = styled.a`
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+    }
+`;
+
 export default {
     Header,
     Nav,
@@ -89,5 +149,10 @@ export default {
     NavListItem,
     NavListLink,
     Humberger,
-    HumbergerLine
+    HumbergerLine,
+    HumbergerMenu,
+    HumbergerNav,
+    HumbergerNavList,
+    HumbergerNavListItem,
+    HumbergerNavListLink
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SC from "./style";
 
 export const Header = () => {
@@ -6,6 +6,7 @@ export const Header = () => {
     const [isHumbergerOpen, setIsHumbergerOpen] = React.useState(false);
 
     return (
+        <>
         <SC.Header>
             <SC.Nav>
                 <SC.NavList>
@@ -37,5 +38,32 @@ export const Header = () => {
                 <SC.HumbergerLine isOpen={isHumbergerOpen} />
             </SC.Humberger>
         </SC.Header>
+        <SC.HumbergerMenu isOpen={isHumbergerOpen}>
+            <SC.HumbergerNav>
+                <SC.HumbergerNavList>
+                <SC.HumbergerNavListItem>
+                    <SC.HumbergerNavListLink>
+                        Home
+                    </SC.HumbergerNavListLink>
+                </SC.HumbergerNavListItem>
+                <SC.HumbergerNavListItem>
+                    <SC.HumbergerNavListLink>
+                        Portfolio
+                    </SC.HumbergerNavListLink>
+                </SC.HumbergerNavListItem>
+                <SC.HumbergerNavListItem>
+                    <SC.HumbergerNavListLink>
+                        About Me
+                    </SC.HumbergerNavListLink>
+                </SC.HumbergerNavListItem>
+                <SC.HumbergerNavListItem>
+                    <SC.HumbergerNavListLink>
+                        Contact
+                    </SC.HumbergerNavListLink>
+                </SC.HumbergerNavListItem>
+                </SC.HumbergerNavList>
+            </SC.HumbergerNav>
+        </SC.HumbergerMenu>
+        </>
     )
 }
