@@ -8,7 +8,7 @@ const MainColor = styled.div`
 
     /* Inner Shadow/Soft */
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    z-index: 200;
+    /* z-index: 200; */
     overflow: hidden;
 `;
 
@@ -28,7 +28,6 @@ const Vector = styled.img`
     top: 0;
     left: 0;
     object-fit: cover;
-    z-index: 100;
 `;
 
 const Ellipse = styled.img`
@@ -36,7 +35,6 @@ const Ellipse = styled.img`
     bottom: 0;
     right: 0;
     object-fit: contain;
-    z-index: 100;
 `;
 
 export default {

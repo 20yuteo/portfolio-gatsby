@@ -122,7 +122,7 @@ const HumbergerNavList = styled.ul`
     gap: 16px;
     justify-content: right;
     position: relative;
-    top: 152px;
+    margin-top: 152px;
     list-style: none;
     font-weight: 600;
 `;
