@@ -94,11 +94,11 @@ const HumbergerMenu = styled.div<{isOpen: boolean}>`
         position: fixed;
         top: 0;
         right: 0;
-        width: 240px;
+        width: 100%;
         height: 100%;
         background-color: ${acceptColor("Primary")};
         z-index: 200;
-        transform: ${props => props.isOpen ? 'translateX(0)' : 'translateX(240px)'};
+        transform: ${props => props.isOpen ? 'translateX(0)' : 'translateX(100%)'};
         transition: transform 0.4s;
     }
 `;
@@ -117,11 +117,6 @@ const HumbergerNav = styled.nav`
 `;
 
 const HumbergerNavList = styled.ul`
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: right;
-    position: relative;
     margin-top: 152px;
     list-style: none;
     font-weight: 600;
@@ -129,11 +124,12 @@ const HumbergerNavList = styled.ul`
 
 const HumbergerNavListItem = styled.li`
     padding-right: 16px;
+    margin-bottom: 16px;
 `;
 
 const HumbergerNavListLink = styled.a`
     color: #000;
-    text-decoration: none;
+    cursor: pointer;
     transition: color 0.2s ease-in-out;
     cursor: pointer;
 
