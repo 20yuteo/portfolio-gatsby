@@ -12,6 +12,12 @@ const SectionTitle = styled.h2`
     line-height: 1.2;
 `;
 
+const SubTitle = styled.h3`
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+`;
+
 const SectionBody = styled.div`
     max-width: 762px;
     margin: 0 auto;
@@ -20,5 +26,6 @@ const SectionBody = styled.div`
 export default {
     Section,
     SectionTitle,
+    SubTitle,
     SectionBody
 };

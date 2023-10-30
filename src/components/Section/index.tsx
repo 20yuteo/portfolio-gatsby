@@ -23,6 +23,14 @@ const SectionTitle = ({children}: {children: React.ReactNode}) => {
     )
 }
 
+const SubTitle = ({children}: {children: React.ReactNode}) => {
+    return (
+        <SC.SubTitle>
+            {children}
+        </SC.SubTitle>
+    )
+}
+
 const SectionBody = ({children}: {children: React.ReactNode}) => {
     return (
         <SC.SectionBody>
@@ -32,6 +40,7 @@ const SectionBody = ({children}: {children: React.ReactNode}) => {
 }
 
 Section.Title = SectionTitle;
+Section.SubTitle = SubTitle;
 Section.Body = SectionBody;
 
 export { Section }

@@ -7,6 +7,7 @@ import reset from 'styled-reset'
 import { Header } from "../components/Header"
 import { AboutMe } from "../components/AboutMe"
 import { Blog } from "../components/Blog"
+import { Portfolio } from "../components/Portfolio"
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -20,6 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Header />
       <AboutMe />
       <Blog />
+      <Portfolio />
     </>
   )
 }
