@@ -27,13 +27,17 @@ export const Blog = () => {
                     <MainCard>
                         <MainCard.Content>
                             ブラウザバックを禁止したくなったら
-                            <Button label="Read More" color='Primary' onClick={() => onClick("ProhibitBrowserBack")} />
+                            <Button color='Primary' onClick={() => onClick("ProhibitBrowserBack")}>
+                                Read More...
+                            </Button>
                         </MainCard.Content>
                     </MainCard>
                     <MainCard>
                         <MainCard.Content>
                             DNSとは？？？(備忘録)
-                            <Button label="Read More" color='Primary' onClick={() => onClick("WhatIsDNS")} />
+                            <Button color='Primary' onClick={() => onClick("WhatIsDNS")}>
+                                Read More...
+                            </Button>
                         </MainCard.Content>
                     </MainCard>
                 </SC.BlogBody>

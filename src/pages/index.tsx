@@ -8,6 +8,7 @@ import { Header } from "../components/Header"
 import { AboutMe } from "../components/AboutMe"
 import { Blog } from "../components/Blog"
 import { Portfolio } from "../components/Portfolio"
+import { Contact } from "../components/Contact"
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -22,6 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <AboutMe />
       <Blog />
       <Portfolio />
+      <Contact />
     </>
   )
 }

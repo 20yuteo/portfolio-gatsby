@@ -4,6 +4,7 @@ const ColorList = {
     "Accent02": "#FFADDE",
     "Accent03": "#A4E8FF",
     "Accent04": "#FFE7AE",
+    "Accent05": "#F8FDB2",
     "Surface": "#FFF"
 }
 
