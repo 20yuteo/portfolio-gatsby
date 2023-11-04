@@ -1,35 +1,28 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SC from "./style";
+import { PageName, ScrollContext } from "@/hooks/useScrollContext";
 
 export const Header = () => {
 
     const [isHumbergerOpen, setIsHumbergerOpen] = React.useState(false);
+    const { onClick } = React.useContext(ScrollContext);
 
     return (
         <>
         <SC.Header>
             <SC.Nav>
                 <SC.NavList>
-                <SC.NavListItem>
-                    <SC.NavListLink>
-                        Home
-                    </SC.NavListLink>
-                </SC.NavListItem>
-                <SC.NavListItem>
-                    <SC.NavListLink>
-                        Portfolio
-                    </SC.NavListLink>
-                </SC.NavListItem>
-                <SC.NavListItem>
-                    <SC.NavListLink>
-                        About Me
-                    </SC.NavListLink>
-                </SC.NavListItem>
-                <SC.NavListItem>
-                    <SC.NavListLink>
-                        Contact
-                    </SC.NavListLink>
-                </SC.NavListItem>
+                    {
+                        Object.entries(PageName).map(([key, value]) => {
+                            return (
+                                <SC.NavListItem key={key}>
+                                    <SC.NavListLink onClick={() => onClick(value)}>
+                                        {value}
+                                    </SC.NavListLink>
+                                </SC.NavListItem>
+                            )
+                        })
+                    }
                 </SC.NavList>
             </SC.Nav>
             <SC.Humberger onClick={() => setIsHumbergerOpen(isOpen => !isOpen)}>
@@ -41,26 +34,17 @@ export const Header = () => {
         <SC.HumbergerMenu isOpen={isHumbergerOpen}>
             <SC.HumbergerNav>
                 <SC.HumbergerNavList>
-                <SC.HumbergerNavListItem>
-                    <SC.HumbergerNavListLink>
-                        Home
-                    </SC.HumbergerNavListLink>
-                </SC.HumbergerNavListItem>
-                <SC.HumbergerNavListItem>
-                    <SC.HumbergerNavListLink>
-                        Portfolio
-                    </SC.HumbergerNavListLink>
-                </SC.HumbergerNavListItem>
-                <SC.HumbergerNavListItem>
-                    <SC.HumbergerNavListLink>
-                        About Me
-                    </SC.HumbergerNavListLink>
-                </SC.HumbergerNavListItem>
-                <SC.HumbergerNavListItem>
-                    <SC.HumbergerNavListLink>
-                        Contact
-                    </SC.HumbergerNavListLink>
-                </SC.HumbergerNavListItem>
+                    {
+                        Object.entries(PageName).map(([key, value]) => {
+                            return (
+                                <SC.HumbergerNavListItem key={key}>
+                                    <SC.HumbergerNavListLink onClick={() => onClick(value)}>
+                                        {value}
+                                    </SC.HumbergerNavListLink>
+                                </SC.HumbergerNavListItem>
+                            )
+                        })
+                    }
                 </SC.HumbergerNavList>
             </SC.HumbergerNav>
         </SC.HumbergerMenu>

@@ -9,14 +9,21 @@ import { AboutMe } from "../components/AboutMe"
 import { Blog } from "../components/Blog"
 import { Portfolio } from "../components/Portfolio"
 import { Contact } from "../components/Contact"
+import { ScrollContext, useScrollContext, PageNameKey } from "@/hooks/useScrollContext"
+
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
 `
 
 const IndexPage: React.FC<PageProps> = () => {
+  const {onClick, scrollY} = useScrollContext();
+
   return (
-    <>
+    <ScrollContext.Provider value={{
+      onClick,
+      scrollY
+    }}>
       <GlobalStyle />
       <SEO />
       <Header />
@@ -24,7 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Blog />
       <Portfolio />
       <Contact />
-    </>
+    </ScrollContext.Provider>
   )
 }
 
