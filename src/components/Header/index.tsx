@@ -26,12 +26,12 @@ export const Header = () => {
                 </SC.NavList>
             </SC.Nav>
             <SC.Humberger onClick={() => setIsHumbergerOpen(isOpen => !isOpen)}>
-                <SC.HumbergerLine isOpen={isHumbergerOpen} />
-                <SC.HumbergerLine isOpen={isHumbergerOpen} />
-                <SC.HumbergerLine isOpen={isHumbergerOpen} />
+                <SC.HumbergerLine $isOpen={isHumbergerOpen} />
+                <SC.HumbergerLine $isOpen={isHumbergerOpen} />
+                <SC.HumbergerLine $isOpen={isHumbergerOpen} />
             </SC.Humberger>
         </SC.Header>
-        <SC.HumbergerMenu isOpen={isHumbergerOpen}>
+        <SC.HumbergerMenu $isOpen={isHumbergerOpen}>
             <SC.HumbergerNav>
                 <SC.HumbergerNavList>
                     {

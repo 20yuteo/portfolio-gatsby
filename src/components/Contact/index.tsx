@@ -19,7 +19,7 @@ export const Contact = () => {
     }, []);
 
     return (
-        <Section backgroundColor={"Primary"}>
+        <Section backgroundcolor={"Primary"}>
             <Section.Body>
                 <Section.Title>Contact</Section.Title>
                 <SC.CardContainer>

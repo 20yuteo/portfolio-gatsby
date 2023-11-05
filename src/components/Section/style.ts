@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const Section = styled.section<{ backgroundColor: string}>`
+const Section = styled.section<{ backgroundcolor: string}>`
     padding: 40px 0;
-    background-color: ${(props) => props.backgroundColor};
+    background-color: ${(props) => props.backgroundcolor};
     width: 100%;
 `;
 

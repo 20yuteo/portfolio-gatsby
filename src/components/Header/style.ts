@@ -58,7 +58,7 @@ const Humberger = styled.div`
     }
 `;
 
-const HumbergerLine = styled.div<{isOpen: boolean}>`
+const HumbergerLine = styled.div<{$isOpen: boolean}>`
     position: relative;
     width: 32px;
     height: 4px;
@@ -72,22 +72,22 @@ const HumbergerLine = styled.div<{isOpen: boolean}>`
     transition: transform 0.4s;
 
     &:first-child {
-        transform: ${props => props.isOpen && 'rotate(45deg)'};
-        ${props => props.isOpen && `top: 12px;`}
+        transform: ${({$isOpen}) => $isOpen && 'rotate(45deg)'};
+        ${({$isOpen}) => $isOpen && `top: 12px;`}
     }
     &:nth-child(2) {
-        ${props => props.isOpen && `visibility: hidden;`}
-        ${props => props.isOpen && `opacity: 0;`};
+        ${({$isOpen}) => $isOpen && `visibility: hidden;`}
+        ${({$isOpen}) => $isOpen && `opacity: 0;`};
     }
 
 
     &:last-child {
-        transform: ${props => props.isOpen && 'rotate(135deg)'};
-        ${props => props.isOpen && `top: -14px;`}
+        transform: ${({$isOpen}) => $isOpen && 'rotate(135deg)'};
+        ${({$isOpen}) => $isOpen && `top: -14px;`}
     }
 `;
 
-const HumbergerMenu = styled.div<{isOpen: boolean}>`
+const HumbergerMenu = styled.div<{$isOpen: boolean}>`
     display: none;
     @media screen and (max-width: 767px) {
         display: block;
@@ -98,7 +98,7 @@ const HumbergerMenu = styled.div<{isOpen: boolean}>`
         height: 100%;
         background-color: ${acceptColor("Primary")};
         z-index: 200;
-        transform: ${props => props.isOpen ? 'translateX(0)' : 'translateX(100%)'};
+        transform: ${({$isOpen}) => $isOpen ? 'translateX(0)' : 'translateX(100%)'};
         transition: transform 0.4s;
     }
 `;

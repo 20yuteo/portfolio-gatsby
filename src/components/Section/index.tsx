@@ -3,13 +3,13 @@ import SC from "./style";
 import { ColorKeyList, acceptColor } from "../../const/Color";
 
 type SectionProps = {
-    backgroundColor?: ColorKeyList
+    backgroundcolor?: ColorKeyList
     children: React.ReactNode
 }
 
-const Section = ({backgroundColor = "Surface", children}: SectionProps) => {
+const Section = ({backgroundcolor = "Surface", children}: SectionProps) => {
     return (
-        <SC.Section backgroundColor={acceptColor(backgroundColor)}>
+        <SC.Section backgroundcolor={acceptColor(backgroundcolor)}>
             {children}
         </SC.Section>
     )

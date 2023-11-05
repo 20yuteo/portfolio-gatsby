@@ -20,7 +20,7 @@ export const Blog = () => {
     }, []);
 
     return (
-        <Section backgroundColor={"Accent03"}>
+        <Section backgroundcolor={"Accent03"}>
             <Section.Body>
                 <Section.Title>Blog</Section.Title>
                 <SC.BlogBody>
