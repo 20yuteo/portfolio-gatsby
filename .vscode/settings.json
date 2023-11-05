@@ -1,0 +1,37 @@
+{
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "templates/**": true,
+        "**/vite.config.js": true,
+        "**/vite.config.d.ts": true,
+        "**/tsconfig.node.tsbuildinfo": true
+    },
+    "eslint.workingDirectories": [
+        "./packages/ui",
+        "./packages/ui-extend",
+        "./apps/be-api",
+        "./apps/be-auth",
+        "./apps/fe-app",
+        "./apps/fe-mgr",
+        "./apps/fe-admin",
+        "./apps/fe-embedded",
+        "./apps/fe-auth",
+        "./apps/e2e/cypress"
+    ],
+    "jestrunner.jestCommand": "yarn jest-runner",
+    "jestrunner.runInExternalNativeTerminal": true,
+    "jestrunner.codeLens": ["run", "debug", "watch", "coverage"]
+}
